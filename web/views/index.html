@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h2>{{.Title}}</h2>
+      </div>
+      <div class="panel-body">
+          {{range .Stories}}
+            <div class="well well-sm">
+                <h1>{{.Title}}</h1>
+                <p>By {{.Profile.FirstName}} at {{.CreatedAt}}</p>
+                <p>{{.Content}}</p>
+            </div>
+          {{end}}
+      </div>
+  </div>
+</div>
